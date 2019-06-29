@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maths="clr-namespace:SimpleMaths.UI"
+             x:Class="SimpleMaths.Pages.MainMenu">
+    <AbsoluteLayout x:Name="layout">
+        <Image x:Name="bkg" Aspect="Fill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                 Padding="20" Spacing="15" AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1" x:Name="stk1">
+            <Label Text="Mathematical Concepts" HorizontalOptions="CenterAndExpand"
+               Style="{StaticResource ILabel}" FontSize="Large" Margin="0,0,0,50"/>
+            <ScrollView>
+                <StackLayout Spacing="30">
+                    <maths:ImagedButton Text="The golden ratio &#x03c6;" 
+                            Source="icon1.png" Clicked="evt"
+                            ButtonStyle="{StaticResource IButton}"/>
+                    <maths:ImagedButton Text="PI" 
+                            Source="icon2.png" Clicked="evt"
+                            ButtonStyle="{StaticResource IButton}"/>
+                </StackLayout>
+            </ScrollView>
+            <Button Text="#" Style="{StaticResource IButton}" HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50"
+                Clicked="Button_Clicked"/>
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     RotationY="180" x:Name="stk2" IsVisible="False" Padding="20">
+            <Label Text="About" Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
+                   FontSize="40" Margin="0,0,0,50"/>
+            <Frame IsClippedToBounds="True" BorderColor="Red" CornerRadius="10" BackgroundColor="Transparent"
+                   Padding="0">
+                <AbsoluteLayout>
+                    <StackLayout AbsoluteLayout.LayoutFlags="All" Opacity="0.2" BackgroundColor="White"
+                                 AbsoluteLayout.LayoutBounds="0,0,1,1">
+                    </StackLayout>
+                    <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Padding="20">
+                        <Label x:Name="about" Style="{StaticResource ILabel}" FontSize="20"
+                               VerticalOptions="CenterAndExpand" Margin="20,0,0,40" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </AbsoluteLayout>
+            </Frame>
+            <Button Text="#" Style="{StaticResource IButton}" HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50"
+                Clicked="Button_Clicked"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

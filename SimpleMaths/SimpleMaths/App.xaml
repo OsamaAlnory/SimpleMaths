@@ -3,6 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SimpleMaths.App">
     <Application.Resources>
-
+        <OnPlatform x:TypeArguments="x:String" x:Key="IFont"
+                        iOS="Oswald" Android="ConcertOne-Regular.ttf#Concert One">
+        </OnPlatform>
+        <Color x:Key="BtnColor">#4287f5</Color>
+        <Style x:Key="ILabel" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="{StaticResource IFont}"/>
+        </Style>
+        <Style x:Key="IButton" TargetType="Button">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="{StaticResource IFont}"/>
+            <Setter Property="BackgroundColor" Value="{StaticResource BtnColor}"/>
+        </Style>
     </Application.Resources>
 </Application>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:an="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="SimpleMaths.Layout.Startup.Page3">
+    <Label Text="Contact us" HorizontalOptions="CenterAndExpand" FontSize="19"
+           HorizontalTextAlignment="Center" FontFamily="{StaticResource IFont}"
+           TextColor="Black"/>
+    <an:AnimationView Animation="startup2.json" AutoPlay="True" WidthRequest="150"
+     HeightRequest="150" Speed="0.5" x:Name="animation" Loop="True"/>
+    <Label x:Name="lbl" FontFamily="{StaticResource IFont}" TextColor="Gray" FontSize="17"
+           HorizontalTextAlignment="Center" LineHeight="1.4"/>
+    <Button Text="Close" Style="{StaticResource IButton}" BackgroundColor="Red"
+            FontAttributes="Bold" VerticalOptions="EndAndExpand" Margin="0,0,0,40"
+            Clicked="Button_Clicked"/>
+</StackLayout>
