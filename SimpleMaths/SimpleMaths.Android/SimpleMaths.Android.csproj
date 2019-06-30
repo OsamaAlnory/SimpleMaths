@@ -84,6 +84,8 @@
     <AndroidAsset Include="Assets\startup.json" />
     <AndroidAsset Include="Assets\startup1.json" />
     <AndroidAsset Include="Assets\startup2.json" />
+    <AndroidAsset Include="Assets\success.json" />
+    <AndroidAsset Include="Assets\error.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

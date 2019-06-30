@@ -13,7 +13,7 @@ namespace SimpleMaths.UI
         {
             if (TText != null)
             {
-                this.Text = App.STRINGS[TText];
+                this.Text = App.getString(TText);
             }
         }
 

@@ -7,9 +7,9 @@
     <Label x:Name="lbl" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"
            FontSize="24" TextColor="Black" HorizontalTextAlignment="Center"/>
     <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
-        <Button Text="Nej" Style="{StaticResource CustomButton}" BackgroundColor="Red"
+        <Button Text="Nej" Style="{StaticResource IButton}" BackgroundColor="Red"
          Clicked="Button_Clicked" HorizontalOptions="FillAndExpand" FontAttributes="Bold"/>
-        <Button Text="Ja" Style="{StaticResource CustomButton}" BackgroundColor="LimeGreen"
+        <Button Text="Ja" Style="{StaticResource IButton}" BackgroundColor="LimeGreen"
          Clicked="Button_Clicked_1" HorizontalOptions="FillAndExpand" FontAttributes="Bold"/>
     </StackLayout>
 </StackLayout>

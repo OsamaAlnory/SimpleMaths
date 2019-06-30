@@ -11,6 +11,6 @@
     <Label x:Name="lbl" FontFamily="{StaticResource IFont}" TextColor="Gray" FontSize="17"
            HorizontalTextAlignment="Center" LineHeight="1.4"/>
     <Button Text="Close" Style="{StaticResource IButton}" BackgroundColor="Red"
-            FontAttributes="Bold" VerticalOptions="EndAndExpand" Margin="0,0,0,40"
+            FontAttributes="Bold" VerticalOptions="EndAndExpand" Margin="0,10,0,0"
             Clicked="Button_Clicked"/>
 </StackLayout>

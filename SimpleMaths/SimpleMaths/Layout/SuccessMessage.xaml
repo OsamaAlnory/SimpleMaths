@@ -9,6 +9,6 @@
     <Label x:Name="lbl" HorizontalOptions="CenterAndExpand" FontSize="16"
            HorizontalTextAlignment="Center"/>
 
-  <Button Style="{StaticResource CustomButton}" BackgroundColor="Purple" TextColor="White"
-            VerticalOptions="EndAndExpand" Text="Okej" Clicked="Button_Clicked"  />
+  <Button Style="{StaticResource IButton}" BackgroundColor="Purple" TextColor="White"
+            VerticalOptions="EndAndExpand" Text="Ok" Clicked="Button_Clicked"  />
 </StackLayout>

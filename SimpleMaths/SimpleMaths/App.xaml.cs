@@ -1,4 +1,5 @@
-﻿using SimpleMaths.Tools;
+﻿using SimpleMaths.Layout;
+using SimpleMaths.Tools;
 using SimpleMaths.UI;
 using System;
 using System.Collections.Generic;
@@ -18,12 +19,23 @@ namespace SimpleMaths
         public static Language lang = Language.EN;
         public static Dictionary<string, string> STRINGS = new Dictionary<string, string>();
         public static Encoding en = Encoding.GetEncoding(28591);
+        public static Page CurrentPage;
 
         public App()
         {
             InitializeComponent();
             LoadStrings();
             MainPage = new NavigationPage(new Pages.MainMenu());
+        }
+
+        public static void SendError(string msg)
+        {
+            new Popup(new ErrorMessage(msg), CurrentPage).Show();
+        }
+
+        public static string getString(string key)
+        {
+            return STRINGS.ContainsKey(key) ? STRINGS[key] : "null";
         }
 
         public static void SetLanguage(Language l)

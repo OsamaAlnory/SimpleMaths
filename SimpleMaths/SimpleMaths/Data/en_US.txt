@@ -28,6 +28,7 @@ golden_ratio.3:
 As it appears, the formula is recursive meaning that as you perform more calculation,
 <nobr> you will get closer and closer to the real value.
 
-We can pick any number we want. In this case we have:
+We can pick any number we want, say 2, then 
 
 <end>
+######################################

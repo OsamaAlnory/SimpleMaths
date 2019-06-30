@@ -16,6 +16,7 @@ namespace SimpleMaths.Pages
 		public Base (string title, params View[] views)
 		{
 			InitializeComponent ();
+            App.CurrentPage = this;
             Title = title;
             bkg.Source = App.GetSource("background1.png");
             List<Framed> sc = new List<Framed>();
