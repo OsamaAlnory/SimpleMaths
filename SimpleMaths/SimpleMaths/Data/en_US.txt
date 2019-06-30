@@ -1,0 +1,33 @@
+######################################
+
+
+startup.first.title:
+Welcome to %name%!
+<end>
+
+startup.first.label:
+%name% is an app which helps you to understand some
+<nobr> of the concepts that lie behind mathematics and programming.
+Many things become much easier to understand when visualized.
+<nobr> This is much helpful when it comes to creating different kinds of games.
+<nobr> For instance, a 3D rotation of a point can be used to create 3D shapes and rotate them.
+<end>
+
+golden_ratio.main:
+Suppose you have a line that is divided into, let's say, a and b.
+<nobr> In this case, it's pretty obvious that the length of the line is a+b.
+<nobr> If the ratio between the longer piece and the line "a+b" is equal to
+<nobr> the ratio between the shorter piece and the longer piece, we get what is known as
+<nobr> The Golden Ratio which is approximated to be 1.6180339.
+<end>
+
+golden_ratio.2:
+There's actually a simple formula for calculating the value of the golden ratio:
+<end>
+golden_ratio.3:
+As it appears, the formula is recursive meaning that as you perform more calculation,
+<nobr> you will get closer and closer to the real value.
+
+We can pick any number we want. In this case we have:
+
+<end>

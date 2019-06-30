@@ -23,14 +23,15 @@ namespace SimpleMaths.Layout
             pg1 = new Startup.Page1();
             pg2 = new Startup.Page2();
             pg3 = new Startup.Page3(this);
-            carousel.ItemsSource = new ObservableCollection<ScrollView> {
+            carousel.ItemsSource = new ObservableCollection<StackLayout> {
                 create(pg1),create(pg2),create(pg3)
             };
 		}
 
-        private ScrollView create(View view)
+        private StackLayout create(View view)
         {
-            return new ScrollView { Content = view,Margin=new Thickness(0,0,0,0)};
+            return new StackLayout { Children = { new ScrollView { Content = view} }
+            ,Padding=30};
         }
 
         public PopupType GetPopupType()

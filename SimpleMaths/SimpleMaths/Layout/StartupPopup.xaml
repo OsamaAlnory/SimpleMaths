@@ -5,7 +5,7 @@
              x:Class="SimpleMaths.Layout.StartupPopup" HorizontalOptions="FillAndExpand"
              VerticalOptions="FillAndExpand">
     <controls:CarouselViewControl x:Name="carousel" Orientation="Horizontal" 
-        InterPageSpacing="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
         ShowArrows="True" ShowIndicators="True">
     </controls:CarouselViewControl>
 </StackLayout>

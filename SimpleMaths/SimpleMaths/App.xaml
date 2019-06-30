@@ -7,6 +7,14 @@
                         iOS="Oswald" Android="ConcertOne-Regular.ttf#Concert One">
         </OnPlatform>
         <Color x:Key="BtnColor">#4287f5</Color>
+        <Style x:Key="Content" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontFamily" Value="{StaticResource IFont}"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            <Setter Property="LineHeight" Value="1.8"/>
+        </Style>
         <Style x:Key="ILabel" TargetType="Label">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontFamily" Value="{StaticResource IFont}"/>

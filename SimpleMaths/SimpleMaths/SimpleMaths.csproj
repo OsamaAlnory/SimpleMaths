@@ -10,13 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\en_US.txt" />
     <None Remove="Images\background.png" />
+    <None Remove="Images\background1.png" />
+    <None Remove="Images\golden_ratio.png" />
+    <None Remove="Images\golden_ratio_formula.png" />
     <None Remove="Images\icon1.png" />
     <None Remove="Images\icon2.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Data\en_US.txt" />
     <EmbeddedResource Include="Images\background.png" />
+    <EmbeddedResource Include="Images\background1.png" />
+    <EmbeddedResource Include="Images\golden_ratio.png" />
+    <EmbeddedResource Include="Images\golden_ratio_formula.png" />
     <EmbeddedResource Include="Images\icon1.png" />
     <EmbeddedResource Include="Images\icon2.png" />
   </ItemGroup>
@@ -41,6 +49,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Layout\Startup\Page3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Base.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Content\_GoldenRatio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Framed.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\MainMenu.xaml">

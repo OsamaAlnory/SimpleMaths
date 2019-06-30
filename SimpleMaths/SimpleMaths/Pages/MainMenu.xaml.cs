@@ -31,7 +31,18 @@ namespace SimpleMaths.Pages
 
         private void evt(object e, EventArgs args)
         {
-            DisplayAlert("5ra", "5raa", "5raaa");
+            var x = new Content._GoldenRatio();
+            Navigation.PushAsync(new Base("Phi", getChildren(x)));
+        }
+
+        private View[] getChildren(StackLayout layout)
+        {
+            var VIEWS = new View[layout.Children.Count];
+            for(int x = 0; x < layout.Children.Count; x++)
+            {
+                VIEWS[x] = layout.Children[x];
+            }
+            return VIEWS;
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
