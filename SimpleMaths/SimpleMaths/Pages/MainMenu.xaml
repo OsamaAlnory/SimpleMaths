@@ -16,8 +16,8 @@
                     <maths:ImagedButton Text="The golden ratio &#x03c6;" 
                             Source="icon1.png" Clicked="evt"
                             ButtonStyle="{StaticResource IButton}"/>
-                    <maths:ImagedButton Text="PI" 
-                            Source="icon2.png"
+                    <maths:ImagedButton Text="If-Sats" 
+                            Source="ificon.png" Clicked="Ifsats_Clicked"
                             ButtonStyle="{StaticResource IButton}"/>
                 </StackLayout>
             </ScrollView>

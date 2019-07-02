@@ -31,4 +31,68 @@ As it appears, the formula is recursive meaning that as you perform more calcula
 We can pick any number we want, say 2, then 
 
 <end>
+
+
+ifsats_main:
+An if statement is a programming conditional statement that,
+<nobr> if proved true, performs a function or displays information.
+<end>
+
+ifsats.1:
+Below is a general example of an if statement:
+<end>
+
+ifsats.2:
+
+int X = 5;
+
+if (X < 10) {
+     Consol.WriteLine ("Hello John");
+}
+ 
+ The output is : Hello John
+<end>
+
+ifsats.3:
+int X = 30;
+
+if (X == 10) { 
+  Consol.WriteLine ("The value of X equals to 10");
+}
+else { 
+Consol.WriteLine ("Value of X is not equal to 10");
+ }
+
+  The output is : Value of X is not equal to 10
+
+<end>
+
+ifsats.4:
+int X = 10;
+
+if (X > 10) { 
+Consol.WriteLine ("Value of X is greater than 10");
+ }
+elsif (X < 10) { 
+Consol.WriteLine ("Value of X is less than 10");
+ }
+else {
+Consol.WriteLine ("The value of X equals to 10");
+}
+  
+  The output is : The value of X equals to 10
+
+<end>
+
+ifsats.5:
+ 
+
+if (X == 10) { 
+  Consol.WriteLine ("The value of X equals to 10");
+}
+else { 
+Consol.WriteLine ("Value of X is not equal to 10");
+ }
+<end>
+
 ######################################

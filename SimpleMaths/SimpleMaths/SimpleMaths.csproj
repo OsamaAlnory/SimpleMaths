@@ -17,6 +17,9 @@
     <None Remove="Images\golden_ratio_formula.png" />
     <None Remove="Images\icon1.png" />
     <None Remove="Images\icon2.png" />
+    <None Remove="Images\if.png" />
+    <None Remove="Images\ificon.png" />
+    <None Remove="Images\ifsats1.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +30,9 @@
     <EmbeddedResource Include="Images\golden_ratio_formula.png" />
     <EmbeddedResource Include="Images\icon1.png" />
     <EmbeddedResource Include="Images\icon2.png" />
+    <EmbeddedResource Include="Images\if.png" />
+    <EmbeddedResource Include="Images\ificon.png" />
+    <EmbeddedResource Include="Images\ifsats1.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +61,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Content\_GoldenRatio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Content\_Ifsats.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Framed.xaml">

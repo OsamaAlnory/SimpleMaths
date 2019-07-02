@@ -15,14 +15,17 @@ namespace SimpleMaths.Pages
 	{
         bool ROTATED = false;
         bool WAITING = false;
+         
+       
 
 		public MainMenu ()
 		{
-			InitializeComponent ();
+           var y = DateTime.Now.Year.ToString();
+            InitializeComponent ();
             bkg.Source = App.GetSource("background.png");
             UI.ImagedButton.LoadAny(layout);
             about.Text = "This app was created by Smart_Soft\n\n"+
-                "Copyright c all rights reserved.";
+                "Copyright@ all rights reserved" + y + ".";
             Device.StartTimer(TimeSpan.FromSeconds(1), () => {
                 new Popup(new StartupPopup(), this) { Closeable = false}.Show();
                 return false;
@@ -67,6 +70,12 @@ namespace SimpleMaths.Pages
                 stk1.IsVisible = true;
             }
             WAITING = false;
+        }
+
+        private void Ifsats_Clicked(object e, EventArgs args)
+        {
+            var x = new Content._Ifsats();
+            Navigation.PushAsync(new Base("If-Sats", getChildren(x)));
         }
     }
 }

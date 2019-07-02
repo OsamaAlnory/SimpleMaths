@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ui="clr-namespace:SimpleMaths.UI"
+             x:Class="SimpleMaths.Pages.Content._Ifsats">
+    <StackLayout>
+        <ui:ILabel Text="What is it?" TextColor="#00ff9d" FontSize="27"
+                   Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
+                   Margin="0,30,0,0"
+                   />
+        <ui:IImage Src="if.png" HeightRequest="200"/>
+        <ui:ILabel TText="ifsats_main" Style="{StaticResource Content}"
+                   Margin="20,0,20,20"/>
+    </StackLayout>
+
+    <StackLayout>
+        <ui:ILabel Text="Example 1:" TextColor="#00ff9d" FontSize="27"
+                   Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
+                   Margin="0,30,0,0"
+                   />
+        <StackLayout Padding="20">
+            <ui:ILabel TText="ifsats.1" Style="{StaticResource Content}"/>
+            <ui:IImage HeightRequest="100" Src="ifsats1.png"/>
+            <ui:ILabel TText="ifsats.2" Style="{StaticResource Content}"/>
+        </StackLayout>
+    </StackLayout>
+
+    <StackLayout VerticalOptions="StartAndExpand">
+        <ui:ILabel Text="Example 2:" TextColor="#00ff9d" FontSize="27"
+                   Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
+                   Margin="0,30,0,0"
+                   />
+        <StackLayout Padding="20">
+            <ui:IImage HeightRequest="100" Src="ifsats1.png"/>
+            <ui:ILabel TText="ifsats.3" Style="{StaticResource Content}"/>
+        </StackLayout>
+    </StackLayout>
+
+    <StackLayout VerticalOptions="StartAndExpand">
+        <ui:ILabel Text="Example 3:" TextColor="#00ff9d" FontSize="27"
+                   Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
+                   Margin="0,30,0,0"
+                   />
+        <StackLayout Padding="20">
+            <ui:IImage HeightRequest="100" Src="ifsats1.png"/>
+            <ui:ILabel TText="ifsats.4" Style="{StaticResource Content}"/>
+        </StackLayout>
+    </StackLayout>
+    <StackLayout VerticalOptions="StartAndExpand">
+        <ui:ILabel Text="Test it yourself!" TextColor="#00ff9d" FontSize="27"
+                   Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
+                   Margin="0,30,0,0"
+                   />
+        <StackLayout Padding="20" Spacing="30">
+            <Frame CornerRadius="7" BorderColor="Red" Padding="2" IsClippedToBounds="True">
+                <StackLayout x:Name="entrystak" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Start X value=" Style="{StaticResource Content}"
+                           FontSize="20"/>
+                    <Entry x:Name="entry" MaxLength="2" WidthRequest="50"
+                           HorizontalTextAlignment="Center" FontSize="20"/>
+
+                 </StackLayout>
+            </Frame>
+            <Button x:Name="button"  Text="Check" Style="{StaticResource IButton}"
+                HorizontalOptions="CenterAndExpand" Clicked="Check_Clicked"/>
+        </StackLayout>
+        <StackLayout Padding="20" x:Name="resultstak">
+            <Label Text="New Value:" Style="{StaticResource Content}"
+                   HorizontalOptions="CenterAndExpand" FontSize="20"/>
+            <Label x:Name="display" Style="{StaticResource Content}" FontSize="20"
+               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            <ui:ILabel TText="ifsats.5" Style="{StaticResource Content}"/>
+            <Label x:Name="Output" Style="{StaticResource Content}" FontSize="20"
+               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+
+            <Button IsVisible="False" x:Name="restbutton" Text="Reset" Style="{StaticResource IButton}"
+                HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </StackLayout>
+</StackLayout>
