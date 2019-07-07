@@ -13,6 +13,7 @@
     <None Remove="Data\en_US.txt" />
     <None Remove="Images\background.png" />
     <None Remove="Images\background1.png" />
+    <None Remove="Images\code1.png" />
     <None Remove="Images\golden_ratio.png" />
     <None Remove="Images\golden_ratio_formula.png" />
     <None Remove="Images\icon1.png" />
@@ -26,6 +27,7 @@
     <EmbeddedResource Include="Data\en_US.txt" />
     <EmbeddedResource Include="Images\background.png" />
     <EmbeddedResource Include="Images\background1.png" />
+    <EmbeddedResource Include="Images\code1.png" />
     <EmbeddedResource Include="Images\golden_ratio.png" />
     <EmbeddedResource Include="Images\golden_ratio_formula.png" />
     <EmbeddedResource Include="Images\icon1.png" />
@@ -39,7 +41,6 @@
     <PackageReference Include="CarouselView.FormsPlugin" Version="5.2.0" />
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="2.5.4" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
-    <PackageReference Include="Xam.Plugin.Iconize" Version="2.0.0.37-beta" />
     <PackageReference Include="Xamarin.Forms" Version="3.5.0.274416" />
     <PackageReference Include="Xamarin.Plugin.FontIcons" Version="2.0.1" />
   </ItemGroup>

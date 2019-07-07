@@ -14,7 +14,7 @@ namespace SimpleMaths
 {
     public partial class App : Application
     {
-        public static readonly string NAME = "SimpleMaths";
+        public static readonly string NAME = "Simple Algorithms";
         public static readonly string PATH = "SimpleMaths";
         public static Language lang = Language.EN;
         public static Dictionary<string, string> STRINGS = new Dictionary<string, string>();

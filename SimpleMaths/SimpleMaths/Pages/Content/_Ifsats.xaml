@@ -51,30 +51,23 @@
                    Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
                    Margin="0,30,0,0"
                    />
+        <ui:ILabel TText="ifsats.5" Style="{StaticResource Content}" Margin="20,10,20,0"/>
         <StackLayout Padding="20" Spacing="30">
             <Frame CornerRadius="7" BorderColor="Red" Padding="2" IsClippedToBounds="True">
                 <StackLayout x:Name="entrystak" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Label Text="Start X value=" Style="{StaticResource Content}"
+                    <Label Text="X value =" Style="{StaticResource Content}"
                            FontSize="20"/>
                     <Entry x:Name="entry" MaxLength="2" WidthRequest="50"
                            HorizontalTextAlignment="Center" FontSize="20"/>
-
-                 </StackLayout>
+                </StackLayout>
             </Frame>
             <Button x:Name="button"  Text="Check" Style="{StaticResource IButton}"
                 HorizontalOptions="CenterAndExpand" Clicked="Check_Clicked"/>
         </StackLayout>
         <StackLayout Padding="20" x:Name="resultstak">
-            <Label Text="New Value:" Style="{StaticResource Content}"
-                   HorizontalOptions="CenterAndExpand" FontSize="20"/>
-            <Label x:Name="display" Style="{StaticResource Content}" FontSize="20"
-               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-            <ui:ILabel TText="ifsats.5" Style="{StaticResource Content}"/>
             <Label x:Name="Output" Style="{StaticResource Content}" FontSize="20"
                HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
-
-            <Button IsVisible="False" x:Name="restbutton" Text="Reset" Style="{StaticResource IButton}"
-                HorizontalOptions="CenterAndExpand"/>
+            
         </StackLayout>
     </StackLayout>
 </StackLayout>

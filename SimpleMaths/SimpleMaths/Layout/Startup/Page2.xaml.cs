@@ -15,7 +15,7 @@ namespace SimpleMaths.Layout.Startup
 		public Page2 ()
 		{
 			InitializeComponent ();
-            lbl.Text = "This app is still in its first stages and new versions will be coming bringing more features.";
+            lbl.Text = "This app is still in its first stages and new versions will be coming to bring more features and stuff!";
         }
 
         public void Stop()

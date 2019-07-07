@@ -9,15 +9,15 @@
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                  Padding="20" Spacing="15" AbsoluteLayout.LayoutFlags="All"
                      AbsoluteLayout.LayoutBounds="0,0,1,1" x:Name="stk1">
-            <Label Text="Mathematical Concepts" HorizontalOptions="CenterAndExpand"
+            <Label Text="Basic Concepts and Calculations" HorizontalOptions="CenterAndExpand"
                Style="{StaticResource ILabel}" FontSize="Large" Margin="0,0,0,50"/>
             <ScrollView>
                 <StackLayout Spacing="30">
+                    <maths:ImagedButton Text="If statement" 
+                            Source="ificon.png" Clicked="Ifsats_Clicked"
+                            ButtonStyle="{StaticResource IButton}"/>
                     <maths:ImagedButton Text="The golden ratio &#x03c6;" 
                             Source="icon1.png" Clicked="evt"
-                            ButtonStyle="{StaticResource IButton}"/>
-                    <maths:ImagedButton Text="If-Sats" 
-                            Source="ificon.png" Clicked="Ifsats_Clicked"
                             ButtonStyle="{StaticResource IButton}"/>
                 </StackLayout>
             </ScrollView>
@@ -30,14 +30,15 @@
             <Label Text="About" Style="{StaticResource ILabel}" HorizontalOptions="CenterAndExpand"
                    FontSize="40" Margin="0,0,0,50"/>
             <Frame IsClippedToBounds="True" BorderColor="Red" CornerRadius="10" BackgroundColor="Transparent"
-                   Padding="0">
+                   Padding="0" VerticalOptions="FillAndExpand">
                 <AbsoluteLayout>
                     <StackLayout AbsoluteLayout.LayoutFlags="All" Opacity="0.2" BackgroundColor="White"
                                  AbsoluteLayout.LayoutBounds="0,0,1,1">
                     </StackLayout>
-                    <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Padding="20">
-                        <Label x:Name="about" Style="{StaticResource ILabel}" FontSize="20"
-                               VerticalOptions="CenterAndExpand" Margin="20,0,0,40" HorizontalTextAlignment="Center"/>
+                    <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                        <Label x:Name="about" Style="{StaticResource ILabel}" FontSize="20" LineHeight="1.8"
+                               VerticalOptions="FillAndExpand" HorizontalTextAlignment="Center"
+                               Margin="0,20,0,20"/>
                     </StackLayout>
                 </AbsoluteLayout>
             </Frame>

@@ -6,11 +6,12 @@ Welcome to %name%!
 <end>
 
 startup.first.label:
-%name% is an app which helps you to understand some
-<nobr> of the concepts that lie behind mathematics and programming.
+%name% helps you understand programming and algorithms in a better way through
+<nobr> the use of mathematics.
 Many things become much easier to understand when visualized.
-<nobr> This is much helpful when it comes to creating different kinds of games.
-<nobr> For instance, a 3D rotation of a point can be used to create 3D shapes and rotate them.
+<nobr> For instance, knowing how to rotate a point in a 3 dimensional space
+<nobr> allows you to create 3D objects and eventually 3D games.
+Physics, when visualized, can explain many things that seem to be difficult to grasp.
 <end>
 
 golden_ratio.main:
@@ -26,73 +27,73 @@ There's actually a simple formula for calculating the value of the golden ratio:
 <end>
 golden_ratio.3:
 As it appears, the formula is recursive meaning that as you perform more calculation,
-<nobr> you will get closer and closer to the real value.
+<nobr> you get closer and closer to the real value but you won't reach it since it's irrational.
 
-We can pick any number we want, say 2, then 
-
+Below is a simple algorithm written in C# language to calculate the value of the golden ratio:
 <end>
 
+golden_ratio.4:
+Here, you can pass any positive value as "startValue". "precision" indicates how precise the value will be
+<nobr> and is very important so that it won't be an infinite recursive loop.
+When "precision" reaches 0 the loop will end and it will return the final value.
+<end>
 
 ifsats_main:
-An if statement is a programming conditional statement that,
-<nobr> if proved true, performs a function or displays information.
+According to computerhope.com, "An if statement is a programming conditional statement that,
+<nobr> if proved true, performs a function or displays information."
 <end>
 
 ifsats.1:
-Below is a general example of an if statement:
+A simple example is shown below:
 <end>
 
 ifsats.2:
 
-int X = 5;
+int x = 5;
 
-if (X < 10) {
-     Consol.WriteLine ("Hello John");
+if (x < 10) {
+     Consol.WriteLine ("Hello There!");
 }
- 
- The output is : Hello John
+
+Since x is defined and has the value 5 which is less than 10, the program will run the code
+<nobr> inside the if statement. In other words, your output would be: Hello There!
 <end>
 
 ifsats.3:
-int X = 30;
+The "else" keyword can be used to decide what the program will do if the statement is false.
+<nobr> Note that the statement doesn't have to be an integer equals another integer.
 
-if (X == 10) { 
-  Consol.WriteLine ("The value of X equals to 10");
+string MyName = "Fredrick";
+
+if (MyName == "John") { 
+    Consol.WriteLine ("Your name is John!");
 }
 else { 
-Consol.WriteLine ("Value of X is not equal to 10");
- }
+    Consol.WriteLine ("Your name is not John!");
+}
 
-  The output is : Value of X is not equal to 10
-
+Your output in this case would be: Your name is not John!
 <end>
 
 ifsats.4:
-int X = 10;
+There are some advanced ways of using if statements like:
 
-if (X > 10) { 
-Consol.WriteLine ("Value of X is greater than 10");
- }
-elsif (X < 10) { 
-Consol.WriteLine ("Value of X is less than 10");
- }
-else {
-Consol.WriteLine ("The value of X equals to 10");
-}
+Console.WriteLine("You are " + (YourName == "John" ? : "Not" : "") + " John!");
   
-  The output is : The value of X equals to 10
-
+Here, what is inside the parentheses is some kind of if statement which, if true, will give
+<nobr> the value John and otherwise it will just give a blank string. This is a very useful way
+<nobr> if you don't want to have a bunch of brackets and if statements in your code.
 <end>
 
 ifsats.5:
- 
+
 
 if (X == 10) { 
-  Consol.WriteLine ("The value of X equals to 10");
+  Consol.WriteLine ("The value of X equals 10");
 }
 else { 
-Consol.WriteLine ("Value of X is not equal to 10");
- }
+  Consol.WriteLine ("Value of X is not equal to 10");
+}
 <end>
 
 ######################################

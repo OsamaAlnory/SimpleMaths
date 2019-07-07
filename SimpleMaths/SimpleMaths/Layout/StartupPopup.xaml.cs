@@ -31,7 +31,7 @@ namespace SimpleMaths.Layout
         private StackLayout create(View view)
         {
             return new StackLayout { Children = { new ScrollView { Content = view} }
-            ,Padding=30};
+            ,Padding=25};
         }
 
         public PopupType GetPopupType()

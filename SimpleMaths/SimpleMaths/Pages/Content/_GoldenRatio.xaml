@@ -22,6 +22,8 @@
             <ui:ILabel TText="golden_ratio.2" Style="{StaticResource Content}"/>
             <ui:IImage HeightRequest="50" Src="golden_ratio_formula.png"/>
             <ui:ILabel TText="golden_ratio.3" Style="{StaticResource Content}"/>
+            <ui:IImage HeightRequest="200" Src="code1.png"/>
+            <ui:ILabel TText="golden_ratio.4" Style="{StaticResource Content}"/>
         </StackLayout>
     </StackLayout>
 

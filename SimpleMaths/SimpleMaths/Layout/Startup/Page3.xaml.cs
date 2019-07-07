@@ -20,7 +20,7 @@ namespace SimpleMaths.Layout.Startup
             this.pop = pop;
 			InitializeComponent ();
             lbl.Text = "If you have any idea that you want to share with us, don't hesitate "
-                +"to post it and make us know about it.";
+                +"to post it and let us know about it. In the About page you may find some contact information.";
 		}
 
         public void Stop()
@@ -30,6 +30,8 @@ namespace SimpleMaths.Layout.Startup
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
+            App.Current.Properties["opened"] = "true";
+            await App.Current.SavePropertiesAsync();
             pop.OnClosed();
             await Navigation.PopPopupAsync();
         }

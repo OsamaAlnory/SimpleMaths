@@ -24,12 +24,17 @@ namespace SimpleMaths.Pages
             InitializeComponent ();
             bkg.Source = App.GetSource("background.png");
             UI.ImagedButton.LoadAny(layout);
-            about.Text = "This app was created by Smart_Soft\n\n"+
-                "Copyright@ all rights reserved" + y + ".";
-            Device.StartTimer(TimeSpan.FromSeconds(1), () => {
-                new Popup(new StartupPopup(), this) { Closeable = false}.Show();
-                return false;
-            });
+            about.Text = "This app was created by Smart_Soft.\n\n"+
+                "Copyright © "+y+" all rights reserved.\n\n"+
+                "Contact us at: developing@programmer.net";
+            var _first = !App.Current.Properties.ContainsKey("opened");
+            if (_first)
+            {
+                Device.StartTimer(TimeSpan.FromSeconds(1), () => {
+                    new Popup(new StartupPopup(), this) { Closeable = false }.Show();
+                    return false;
+                });
+            }
         }
 
         private void evt(object e, EventArgs args)
@@ -75,7 +80,7 @@ namespace SimpleMaths.Pages
         private void Ifsats_Clicked(object e, EventArgs args)
         {
             var x = new Content._Ifsats();
-            Navigation.PushAsync(new Base("If-Sats", getChildren(x)));
+            Navigation.PushAsync(new Base("If statement", getChildren(x)));
         }
     }
 }
